@@ -151,6 +151,7 @@
     <Compile Include="ReflectedActionDescriptor.cs" />
     <Compile Include="ReflectedActionDescriptorProvider.cs" />
     <Compile Include="ReflectedActionExecutor.cs" />
+    <Compile Include="FilterActionInvoker.cs" />
     <Compile Include="ReflectedActionInvoker.cs" />
     <Compile Include="ReflectedActionInvokerProvider.cs" />
     <Compile Include="Rendering\DynamicViewData.cs" />
