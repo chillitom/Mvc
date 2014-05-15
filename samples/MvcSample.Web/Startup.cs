@@ -16,10 +16,18 @@ namespace MvcSample.Web
                 services.AddMvc();
                 services.AddSingleton<PassThroughAttribute>();
                 services.AddSingleton<UserNameService>();
+
+                services.AddSingleton<INestedProvider<ActionDescriptorProviderContext>, ModuleActionDescriptorProvider>();
+                services.AddSingleton<INestedProvider<ActionInvokerProviderContext>, ModuleActionInvokerProvider>();
             });
 
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    "moduleRoute",
+                    "module/{modulepath}",
+                    new { module = "true" });
+
                 routes.MapRoute("areaRoute", "{area}/{controller}/{action}");
 
                 routes.MapRoute(
@@ -31,6 +39,7 @@ namespace MvcSample.Web
                     "controllerRoute",
                     "{controller}",
                     new { controller = "Home" });
+
             });
         }
     }

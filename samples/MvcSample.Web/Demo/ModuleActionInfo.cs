@@ -1,0 +1,13 @@
+﻿using System;
+
+namespace MvcSample.Web
+{
+    public class ModuleActionInfo
+    {
+        public Func<object> Func { get; set; }
+
+        public string Path { get; set; }
+
+        public string Verb { get; set; }
+    }
+}

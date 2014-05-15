@@ -45,6 +45,15 @@
     <Compile Include="Areas\Travel\Controllers\Flight.cs" />
     <Compile Include="Areas\Travel\Controllers\HomeController.cs" />
     <Compile Include="Components\TagCloud.cs" />
+    <Compile Include="Demo\DemoModule.cs" />
+    <Compile Include="Demo\ModuleActionCollection.cs" />
+    <Compile Include="Demo\ModuleActionDescriptor.cs" />
+    <Compile Include="Demo\ModuleActionDescriptorProvider.cs" />
+    <Compile Include="Demo\ModuleActionInfo.cs" />
+    <Compile Include="Demo\ModuleActionInvoker.cs" />
+    <Compile Include="Demo\ModuleActionInvokerProvider.cs" />
+    <Compile Include="Demo\ModuleControllerFactory.cs" />
+    <Compile Include="Demo\MvcModule.cs" />
     <Compile Include="FiltersController.cs" />
     <Compile Include="Filters\AgeEnhancerFilterAttribute.cs" />
     <Compile Include="Filters\BlockAnonymous.cs" />
