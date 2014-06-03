@@ -3,6 +3,7 @@
 
 using Microsoft.AspNet.Mvc;
 using Microsoft.Framework.ConfigurationModel;
+using Microsoft.Framework.OptionsModel;
 
 namespace Microsoft.Framework.DependencyInjection
 {
@@ -10,11 +11,13 @@ namespace Microsoft.Framework.DependencyInjection
     {
         public static IServiceCollection AddMvc(this IServiceCollection services)
         {
+            services.Add(OptionsServices.GetDefaultServices());
             return services.Add(MvcServices.GetDefaultServices());
         }
 
         public static IServiceCollection AddMvc(this IServiceCollection services, IConfiguration configuration)
         {
+            services.Add(OptionsServices.GetDefaultServices());
             return services.Add(MvcServices.GetDefaultServices(configuration));
         }
     }
