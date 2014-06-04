@@ -14,9 +14,10 @@
     "Microsoft.AspNet.Server.WebListener": "0.1-alpha-*",
     "Microsoft.DataAnnotations": "0.1-alpha-*",
     "Microsoft.Framework.ConfigurationModel": "0.1-alpha-*",
-    "Microsoft.Framework.DependencyInjection": "0.1-alpha-*"
+    "Microsoft.Framework.DependencyInjection": "0.1-alpha-*",
+    "Nowin.vNext": ""
   },
-  "commands": { "web": "Microsoft.AspNet.Hosting server=Microsoft.AspNet.Server.WebListener server.urls=http://localhost:5001" },
+  "commands": { "web": "Microsoft.AspNet.Hosting server=Nowin.vNext" },
   "configurations": {
     "net45": {
       "dependencies": {
